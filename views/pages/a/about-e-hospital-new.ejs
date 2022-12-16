@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    
+ <head>
+   <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../css/style.css">
+
+
+</head>
+    
+   
+     <script>
+     
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunctionone() {
+  var x = document.getElementById("navbar");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+    
+</script>
+
+<body onload="loaderFunction()">
+    
+   <!-- header pasted below-->
+<%- include('../../partials/header') %>
+
+    <img src="../images/main-pg-.png" alt="Nature" class="responsive">
+    
+    
+    <div class="grid-container">
+        <div class="grid-item">
+            <p style= "padding: 120px;"></p>
+        </div>
+  
+    <div class="grid-item">
+      <h3 class="darkgreen">The Team</h3><br>
+        <div>
+            <p style="color:black; text-align: justify;">ALI ABBAS, PROFESSOR
+              Ali Abbas received his PhD in 2010, his M.Sc. in 2004; in Electrical and Computer Engineering from University of Ottawa, and his B.Eng. in Electrical and Computer Engineering from Concordia University in Montreal in 2000. Ali Abbas is a researcher and entrepreneur; he co-founded and the director of KI Design in early 2017, prior to that Ali Abbas was an architect and senior manager with eHealth Ontario 2010-2017.
+            </p>
+          </div><br>
+      <h3 class="darkgreen">About E-health</h3><br>
+        <div>
+            <p style="color:black; text-align: justify;">The E-Hospital application is being provided as-is to government hospitals across the country via the SaaS (Software as a service) model. Patient Registration (OPD & Casualty), IPD (Admission, Discharge & Transfer), Billing, Lab Information System, Radiology Information System, Clinic, Dietary, Laundry, Store & Pharmacy, and OT Management are the modules of the e-Hospital application that are currently available on the cloud.
+            </p>
+          </div><br>
+      <h3 class="darkgreen">Benifits of E-hospital</h3><br>
+          <div>
+              <p style="color:black; text-align: justify;">The Hospital Management Information System Software enables easy access to patient data in order to generate various records, such as demographic, gender, and age classifications. It is especially useful at the ambulatory level, improving continuity of care. The capacity to retrieve such data remotely is enhanced by Internet connectivity.              
+              </p><br>
+              <p style="color:black; text-align: justify;">It aids hospital administrators in formulating comprehensive health care strategies by serving as a decision support system.             
+               </p><br>
+              <p style="color:black; text-align: justify;">It efficiently generates the running of finances, patient food, and the distribution of medical aid. It paints a vivid image of future hospital expansion.
+              </p><br>
+              <p style="color:black; text-align: justify;">It reflects an enhanced drug monitoring system, as well as its effectiveness. It pushes harmful drug interactions to the margins and encourages appropriate pharmacological use.
+             </p>
+            </div><br>
+            
+      </div>
+    
+        
+        
+  <div class="grid-item">
+      
+      <img src="../images/anoutUs-img-1.jpg" alt="Nature" class="abt1responsive">
+      
+   </div>
+
+<!--2ndrowofgrid-->
+</div>
+    <div class="grid-container">
+        <div class="grid-item"> 
+            <div class="div-two-rounded">
+                <div><br><br>
+<center>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Contact</th>
+    
+  </tr>
+  <tr>
+    <td>Professor Ali Abbas</td>
+    <td>aabbas@uottawa.ca</td>
+   
+  </tr>
+  <tr>
+    <td>Zafar Mehmood </td>
+    <td>zmoha027@uottawa.ca</td>
+   
+  </tr>
+ <tr>
+    <td>Anas Javaid</td>
+    <td>ajava059@uottawa.ca</td>
+   
+  </tr>
+  <tr>
+    <td>Syed Asad Nadeem</td>
+    <td>snade075@uottawa.ca</td>
+   
+  </tr>
+</table>
+</center>
+                    <br><br>
+<br><br>
+                </div>
+                
+                </div>
+           <!-- <img src="aboutus-img-2.PNG" alt="Nature" class="abt2responsive">-->
+        </div>
+        <div class="grid-item"> 
+        </div>
+        <div class="grid-item"> 
+        </div>
+    </div>
+    
+
+<!-- Footer----------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+<br><br><br><br><br><br>
+    <br><br><br><br><br><br>
+
+<!-- footer pasted below-->
+<div class="footer">
+  <p><strong>E-Hospital</strong></p>
+    <table>
+    <tr>
+        <td></td>
+        <td>Copyright © 2022 E-Hospital - All Rights Reserved.</td>
+        
+        </tr>
+    
+    </table>
+</div>    
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>  
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->    
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+    
+</body>
+    
+</html>

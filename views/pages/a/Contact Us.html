@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    
+ <head>
+<!-- Reg CSS form here----------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+     
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+    
+   <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+    
+     <script>
+     
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunctionone() {
+  var x = document.getElementById("navbar");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+    
+</script>
+
+<body onload="loaderFunction()">
+    
+
+     <!----- sticky nav starts here -->
+
+   <div class="topnav" id="navbar">
+    <img class="navbar-brand" src="eh-logo-final.png" title="borhykerteszetcsomagküldés" alt="borhykerteszetcsomagküldés">
+  <a href="about-e-hospital-new.html" class="active">Home</a>
+  <a href="Reg.html">Register</a>
+  <a href="login.html">Services</a>
+  <a href="about-e-hospital-new.html">About Us</a>
+  <a href="Contact%20Us.html">Contact Us</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunctionone()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+     <!----- sticky nav ends here -->
+    
+ <!-- Contact us form here----------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<br><br><br><br><br><br><br><br><br><br>
+  <center>
+ <div class="maincontainer">
+    <div class="content">
+      <div class="left-side">
+        <div class="address details">
+          <i class="fas fa-map-marker-alt"></i>
+          <div class="topic">Address</div>
+          <div class="text-one">Surkhet, NP12</div>
+          <div class="text-two">Birendranagar 06</div>
+        </div>
+        <div class="phone details">
+          <i class="fas fa-phone-alt"></i>
+          <div class="topic">Phone</div>
+          <div class="text-one">+0098 9893 5647</div>
+          <div class="text-two">+0096 3434 5678</div>
+        </div>
+        <div class="email details">
+          <i class="fas fa-envelope"></i>
+          <div class="topic">Email</div>
+          <div class="text-one">codinglab@gmail.com</div>
+          <div class="text-two">info.codinglab@gmail.com</div>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="topic-text">Send us a message</div>
+        <p>We are here to help you, write us a message and expect a reply within 24 - 48 hours.</p>
+      <form action="#">
+        <div class="input-box">
+          <input type="text" placeholder="Enter your name">
+        </div>
+        <div class="input-box">
+          <input type="text" placeholder="Enter your email">
+        </div>
+        <div class="input-box message-box">
+        <textarea id="subject" name="subject" placeholder="Enter your message" style="height:80px"></textarea>
+
+        </div>
+        <div class="button">
+          <input type="button" value="Send Now" >
+        </div>
+      </form>
+    </div>
+    </div>
+  </div>
+</center>
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+   
+
+<!-- Footer----------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+<br><br><br><br><br><br>
+    <br><br><br><br><br><br>
+
+<footer class="footer">
+    <div class="waves">
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
+    </div>
+    <ul class="social-icon">
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a></li>
+    </ul>
+    <ul class="menu">
+      <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Register</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">About Us</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Contact Us</a></li>
+
+    </ul>
+    <p>&copy;2022 E-Hopital uOttawa | All Rights Reserved</p>
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>  
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->    
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+    
+</body>
+    
+</html>
